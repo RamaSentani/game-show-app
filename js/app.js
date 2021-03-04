@@ -5,11 +5,11 @@ var startButtonLink = document.getElementsByClassName('btn__reset');
 var missed = 0;
 
 var phrases = [
-    'application programming interface',
-    'cascading style sheets',
-    'hypertext markup language',
-    'syntactically awesome style sheets',
-    'structured query language'
+    'the shape of water',
+    'green book',
+    'parasite',
+    'the godfather',
+    'moonlight'
 ];
 
 // return a random phrase from an array
@@ -50,11 +50,9 @@ const checkLetter = button => {
             if (i == letter.length) {
                 return match;
             }
-        }
-        else if (i == letter.length - 1 && match == true) {
+        } else if (i == letter.length - 1 && match == true) {
             return match;
-        }
-        else if (i == letter.length - 1 && match == false) {
+        } else if (i == letter.length - 1 && match == false) {
             return null;
         }
     }

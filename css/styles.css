@@ -29,7 +29,9 @@ body {
   height: 100vh;
 }
 
-li, ol, ul {
+li,
+ol,
+ul {
   padding: 0;
   display: inline-block;
 }
@@ -104,6 +106,14 @@ button {
   justify-content: center;
 }
 
+.keyrow button {
+  cursor: pointer;
+}
+
+.keyrow button:hover {
+  background-color: #76CE82;
+}
+
 .chosen {
   background: var(--color-neutral);
   border-radius: 5px;
@@ -117,6 +127,11 @@ button {
   background: #FFFFFF;
   border-radius: 5px;
   font-size: var(--font-size-medium);
+  cursor: pointer;
+}
+
+.btn__reset:hover {
+  opacity: 80%;
 }
 
 /* Overlay */
